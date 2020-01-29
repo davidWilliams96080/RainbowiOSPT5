@@ -9,21 +9,19 @@
 import UIKit
 
 class ColorDetailViewController: UIViewController {
-
+    
     var cellColor: MyColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       updateViews()
+        
+        updateViews()
     }
     
-
     func updateViews() {
         if let cellColor = cellColor {
             title = cellColor.name
             view.backgroundColor = cellColor.color
         }
     }
-
 }
